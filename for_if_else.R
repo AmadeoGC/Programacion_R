@@ -47,7 +47,7 @@ clasif
 
 
 ### Como crear una nueva columna en un data frame -> for() + if() + else
-#-----------------------------------------------------------------------
+#-------------------------------------------------------------------------
 
 #creamos un pequeño data frame
 r <- c(1,2,3,4,5,6,7,8,3,5,10) 
@@ -96,34 +96,57 @@ for(i in 1:length(vector)) {
 nuevo
 
 
+#=======================================================================================================================================
+
+#como hacer un ciclo for () dentro de otro
+#--------------------------------------------
+
+#para este ejemplo usaremos una matriz
+mat1 <- matrix(1:9, ncol=3)
+mat1
+
+#recorrer la matriz e imprimir el valor de cada elemento (fila x columna)
+for (i in 1:nrow(mat1)) {
+  for (j in 1:ncol(mat1)) {
+    print(paste("El valor de la fila ", i, "y la columan ", j, "es = ", mat1[i,j]))
+  }
+}
+
+
+#agregamos una condición de parada break, en base a una condición if()
+for (i in 1:nrow(mat1)) {
+  for (j in 1:ncol(mat1)) {
+    if (i+j >=5 ) {
+      break
+    }
+    print(paste("El valor de la fila ", i, "y la columan ", j, "es = ", mat1[i,j]))
+  }
+}
+
+
 #====================================================================================================================================================================
 
 
 # Condición de parada -> break
 #--------------------------------
 
-cities <- list("New York", "Paris",
+cities <- c("New York", "Paris",
                  "London", "Tokyo",
                  "Rio de Janeiro", "Cape Town")
 
 for(city in cities) {
   if(nchar(city) == 6) {
-    break
+    break            #condición de parada, una vez que encuentra el elemento de 6 caracteres, se detiene el bucle y se imprimen los elementos antes de la condición
   }
   print(city)
 }
 
 
-
+#condición para omitir elementos -> next
+#----------------------------------------
 for(city in cities) {
   if(nchar(city) == 6) {
     next
   }
   print(city)
 }
-
-
-
-
-
-
