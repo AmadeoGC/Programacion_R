@@ -2,6 +2,8 @@
 ###           ELEMETOS DE PROGRAMACIÓN EN R            ###
 ###                 bucles -> for()                    ###
 ###              condición -> if/else                  ###
+###                 parada -> break                    ###
+###                 omitir -> next                     ###
 ###               <Amadeo Guzmán C.>                   ###
 ##########################################################
 
@@ -28,7 +30,7 @@ for (i in 1:10) {
 #leemos nuestro vector
 clasif1
 
-
+#en este caso además se asignara la etiqueta "chico" a los numeros menores o igual a 5 y lo guardamos en un vector (clasif)
 #ciclo for + if + else
 clasif <- NULL
 
@@ -36,7 +38,7 @@ for (i in 1:10) {
   if (i > 5) {
     clasif[i] <- 'grande' 
   } else {
-    clasif[i] <- 'chico' # *2
+    clasif[i] <- 'chico'
   }
 }
 #leemos nuestro nuevo vector
@@ -49,11 +51,11 @@ clasif
 ### Como crear una nueva columna en un data frame -> for() + if() + else
 #-------------------------------------------------------------------------
 
-#creamos un pequeño data frame
+#creamos un pequeño data frame (xx)
 r <- c(1,2,3,4,5,6,7,8,3,5,10) 
 p <- c("v1","v2","v3","v4","v5","v6","v7","v8","V9","v10", "v11")
-
 xx <- data.frame(p, r)
+
 length(xx)
 length(xx$r)
 
@@ -83,7 +85,7 @@ nuevo <- NULL
 #ciclo para crear 3 categorias -> cat_1 (<=5); cat_2 (6-8), cat_3 (>8)
 for(i in 1:length(vector)) {
   if(vector[i]<=5) {
-    nuevo[i] = "cat_1" # valore alfanumerico
+    nuevo[i] = "cat_1" 
   } else {
     if(vector[i]>=9) {
       nuevo [i]= "cat_3"
