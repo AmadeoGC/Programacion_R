@@ -1,11 +1,11 @@
-##########################################################
-###           ELEMETOS DE PROGRAMACIÓN EN R            ###
-###                 bucles -> for()                    ###
-###              condición -> if/else                  ###
-###                 parada -> break                    ###
-###                 omitir -> next                     ###
-###               <Amadeo Guzmán C.>                   ###
-##########################################################
+###########################################################
+###           ELEMETOS DE PROGRAMACIÓN EN R             ###
+###                  bucles -> for()                    ###
+###               condición -> if/else                  ###
+###                  parada -> break                    ###
+###                  omitir -> next                     ###
+###                <Amadeo Guzmán C.>                   ###
+###########################################################
 
 
 ### Bucle (for) + condicional (if) con numeros
