@@ -161,9 +161,9 @@ for (i in 1:nrow(mat1)) {
 
 
 
-bbb <- 115
+bbb <- 50000
 {
-  if (bbb>0) {
+  if (bbb>0 & bbb<=9999) {
     if (bbb<10) {
       print("tiene 1 dígito")
     } else if (bbb>=10 & bbb<=99) {
@@ -174,7 +174,7 @@ bbb <- 115
       print("Tiene 4 dígitos")
     }
   } else{
-    print("Introducir valor positivo")
+    print("Introducir valor positivo entre 1 y 9999")
   }
 }
 
