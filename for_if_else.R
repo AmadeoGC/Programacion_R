@@ -155,7 +155,26 @@ for (i in 1:nrow(mat1)) {
       print(paste(num," Es impar"))
     }
   } else{
-    print("Se debe introducrun numero positivo")
+    print("Se debe introducir un número positivo")
+  }
+}
+
+
+
+bbb <- 115
+{
+  if (bbb>0) {
+    if (bbb<10) {
+      print("tiene 1 dígito")
+    } else if (bbb>=10 & bbb<=99) {
+      print("Tiene 2 dígitos")
+    } else if (bbb>=100 & bbb<=999) {
+      print("Tiene 3 dígitos")
+    } else if (bbb>=1000 & bbb<=9999) {
+      print("Tiene 4 dígitos")
+    }
+  } else{
+    print("Introducir valor positivo")
   }
 }
 
