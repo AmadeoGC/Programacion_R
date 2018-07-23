@@ -82,6 +82,8 @@ z
 vector<-c(1,2,3,4,5,6,7,8,1,2,3,10,15)
 #nuevo vector
 nuevo <- NULL
+
+#opción A -> if y else por separado 
 #ciclo para crear 3 categorias -> cat_1 (<=5); cat_2 (6-8), cat_3 (>8)
 for(i in 1:length(vector)) {
   if(vector[i]<=5) {
@@ -94,7 +96,21 @@ for(i in 1:length(vector)) {
     }
   }
 }
-#leemos nuestro nuevo vector
+#leemos nuestro vector
+nuevo
+
+
+#opción B -> utilizando else if() juntos
+for (i in 1:length(vector)) {
+  if (vector[i] <= 5) {
+    nuevo[i] = "cat1"
+  } else if (vector[i] >=9) {   #else if()
+    nuevo[i] = "cat_3"
+  } else {
+    nuevo[i] = "cat2"
+  }
+}
+#leemos el vector
 nuevo
 
 
@@ -128,6 +144,23 @@ for (i in 1:nrow(mat1)) {
 
 #====================================================================================================================================================================
 
+# Otros ejemplos
+#----------------
+{
+  num <- 11
+  if (num > 0) {
+    if (num%%2 == 0) {
+      print(paste(num," Es par"))
+    } else{
+      print(paste(num," Es impar"))
+    }
+  } else{
+    print("Se debe introducrun numero positivo")
+  }
+}
+
+
+#========================================================================================================================================
 
 # Condición de parada -> break
 #--------------------------------
