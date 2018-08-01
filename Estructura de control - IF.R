@@ -1,8 +1,8 @@
-#########################################
-###   Diferentes usos básicos de la   ###
-###     estructura de control if      ###
-###      <Amadeo Guzmán c.>           ###
-#########################################
+##########################################
+###    Diferentes usos básicos de la   ###
+###      estructura de control if      ###
+###        <Amadeo Guzmán c.>          ###
+##########################################
 
 'la construcción de la estructura IF regresa un valor, que puede, si se quiere, 
 ser asignado a una variable o utilizado de otras maneras. Los siguientes ejemplos 
