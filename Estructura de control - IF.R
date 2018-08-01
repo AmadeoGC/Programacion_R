@@ -1,10 +1,10 @@
 #########################################
-###   Diferentes usos b醩icos de la   ###
+###   Diferentes usos b谩sicos de la   ###
 ###     estructura de control if      ###
-###      <Amadeo Guzm醤 c.>           ###
+###      <Amadeo Guzm谩n c.>           ###
 #########################################
 
-'la construcci髇 de la estructura IF regresa un valor, que puede, si se quiere, 
+'la construcci贸n de la estructura IF regresa un valor, que puede, si se quiere, 
 ser asignado a una variable o utilizado de otras maneras. Los siguientes ejemplos 
 muestran la sintaxis y el uso de estas construcciones'
 
@@ -19,7 +19,7 @@ if(aa > 15)
 
 if(aa > 15) print("Mayor a 15")
 
-if(aa > 15) 100 #para devolver un valor si se cumple la condici髇
+if(aa > 15) 100 #para devolver un valor si se cumple la condici贸n
 
 #el resultado se puede guardar en un objeto
 x1 <- if(aa > 15) 100
@@ -27,7 +27,7 @@ x1
 
 
 #------------------------------------------------------------
-### if similar a otros lengusjes de programaci髇 {snippet}
+### if similar a otros lengusjes de programaci贸n {snippet}
 #------------------------------------------------------------
 #imprimir un msj
 if (aa > 15) {
@@ -52,14 +52,14 @@ z1
 ### if + else
 #---------------
 aa <- 16
-#clasificaci髇 en 2 categor韆s
+#clasificaci贸n en 2 categor铆as
 if (aa <= 10) {
   print("RANGO MENOR")
 } else{
   print("RANGO MAYOR")
 }
 
-#clasificaci髇 en 3 categor韆s
+#clasificaci贸n en 3 categor铆as
 if (aa <= 10) {
   print("RANGO MENOR")
 } else if(aa > 10 && aa <= 20){
@@ -68,18 +68,4 @@ if (aa <= 10) {
 } else{             #el 3er. bloque de instrucciones se ejecuta si nose cumplen las condiciones anteriores
   print("RANGO MAYOR")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
